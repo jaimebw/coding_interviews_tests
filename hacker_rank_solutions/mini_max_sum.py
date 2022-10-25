@@ -6,12 +6,12 @@ def miniMaxSum(arr):
     min_val = min(arr)
     max_val = max(arr)
     all_sum = 0
-    
-    for i in arr:
-        all_sum +=i
-    print(all_sum - max_val,all_sum - min_val)
 
-test = [1,2,3,4,5]
+    for i in arr:
+        all_sum += i
+    print(all_sum - max_val, all_sum - min_val)
+
+
+test = [1, 2, 3, 4, 5]
 
 miniMaxSum(test)
-

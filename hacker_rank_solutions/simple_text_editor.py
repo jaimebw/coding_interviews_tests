@@ -15,17 +15,17 @@ line = ""
 line0 = ""
 pass_results = [line]
 resets = 0
-for n,i in enumerate(inputs):
+for n, i in enumerate(inputs):
     inst = i[0]
     try:
         val = i[1]
     except:
         val = 0
     if inst == "1":
-        line = line +val 
+        line = line + val
         pass_results.append(line)
     elif inst == "3":
-        index = int(val)-1
+        index = int(val) - 1
         print(line[index])
     elif inst == "2":
         index = int(val)
@@ -36,7 +36,3 @@ for n,i in enumerate(inputs):
         pass_results.pop()
     else:
         pass
-    
-    
-
-
